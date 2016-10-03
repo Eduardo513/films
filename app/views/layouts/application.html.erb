@@ -8,6 +8,19 @@
 </head>
 <body>
 
+<div id = "banner">
+	<%= image_tag("movie-night.jpg", :size => '125x50') %>
+	<%= "Movies we Love" %>
+</div>
+
+<div id = "nav">
+	<ul>
+		<li><%=link_to "Home", root_path%></li>
+		<li><%=link_to "Move News", 'http://oscar.go.com/nominees'%></li>
+		<li><%=link_to "Contact Us", '#'%></li>
+		<li><%=link_to "Movies", movies_path%></li>
+	</ul>
+</div>
 <%= yield %>
 
 </body>
