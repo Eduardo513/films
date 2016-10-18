@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
  
+  resources :movies do
+	resources :comments
+  end
+
 	controller :sessions do
 		get 'login'=> :new
 		post 'login'=> :create
